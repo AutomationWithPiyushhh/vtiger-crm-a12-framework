@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import generic_utility.FileUtility;
+import generic_utility.WebDriverUtility;
 
 public class CreateOrganizationTest {
 	
@@ -68,8 +69,11 @@ public class CreateOrganizationTest {
 //		Logout
 		WebElement profilePic = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
 
-		Actions act = new Actions(driver);
-		act.moveToElement(profilePic).build().perform();
+		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		
+//		Actions act = new Actions(driver);
+//		act.moveToElement(profilePic).build().perform();
+		wdUtil.hover(profilePic);
 
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Sign Out")).click();
