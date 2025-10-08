@@ -6,6 +6,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class SauceDemo {
 	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.edge.driver", "./resources/msedgedriver.exe");
 		WebDriver driver = new EdgeDriver();
 
 		driver.get("https://www.saucedemo.com/v1/");

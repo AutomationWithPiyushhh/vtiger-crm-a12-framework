@@ -12,22 +12,23 @@ import org.openqa.selenium.interactions.Actions;
 
 import generic_utility.FileUtility;
 import generic_utility.WebDriverUtility;
+import object_repository.HomePage;
+import object_repository.LoginPage;
+import object_repository.OrgPage;
+import object_repository.VerifyOrgPage;
 
 public class CreateOrganizationTest {
-	
-	
+
 	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException {
 		FileUtility fUtil = new FileUtility();
-		
+
 //		Get the data from properties file
 		String BROWSER = fUtil.getDataFromPropertiesFile("bro");
 		String URL = fUtil.getDataFromPropertiesFile("url");
-		String USERNAME = fUtil.getDataFromPropertiesFile("un");
-		String PASSWORD = fUtil.getDataFromPropertiesFile("pwd");
-		
+
 //		Get the data from excel file
 		String orgName = fUtil.getStringDataFromExcelFile("org", 3, 0);
-		
+
 //		Open Browser 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -36,29 +37,41 @@ public class CreateOrganizationTest {
 //		Login
 		driver.get(URL);
 
-		WebElement username = driver.findElement(By.name("user_name"));
-		username.sendKeys(USERNAME);
-		WebElement password = driver.findElement(By.name("user_password"));
-		password.sendKeys(PASSWORD);
+		LoginPage lp = new LoginPage(driver);
+//		
+//		WebElement username = lp.getUn();
+//		username.sendKeys(USERNAME);
+//		
+//		WebElement password = lp.getPwd();
+//		password.sendKeys(PASSWORD);
+//
+//		lp.getLoginBtn().click();
 
-		driver.findElement(By.id("submitButton")).click();
+		lp.login();
+
 		Thread.sleep(3000);
+
 //		Create Organization
-		driver.findElement(By.linkText("Organizations")).click();
+		HomePage hp = new HomePage(driver);
+		hp.getOrgLink().click();
 
 		Thread.sleep(2000);
-		driver.findElement(By.cssSelector("img[alt='Create Organization...']")).click();
+		
+		OrgPage op = new OrgPage(driver);
+				
+		op.getOrgPlusIcon().click();
 
 //		Filling data to the form
-		WebElement orgField = driver.findElement(By.name("accountname"));
+		WebElement orgField = op.getOrgField();
 		orgField.sendKeys(orgName);
 
 		Thread.sleep(3000);
 //		Save 
-		driver.findElement(By.cssSelector("input[title='Save [Alt+S]']")).click();
+		op.getSaveBtn().click();
 
 //		Verification
-		String actOrgName = driver.findElement(By.id("dtlview_Organization Name")).getText();
+		VerifyOrgPage vop = new VerifyOrgPage(driver);
+		String actOrgName = vop.getActOrgName().getText();
 
 		if (actOrgName.equals(orgName)) {
 			System.out.println("Created Organization successfully!!!!");
@@ -67,16 +80,16 @@ public class CreateOrganizationTest {
 		}
 
 //		Logout
-		WebElement profilePic = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
+		WebElement profilePic = hp.getProfilePic();
 
 		WebDriverUtility wdUtil = new WebDriverUtility(driver);
-		
+
 //		Actions act = new Actions(driver);
 //		act.moveToElement(profilePic).build().perform();
 		wdUtil.hover(profilePic);
 
 		Thread.sleep(2000);
-		driver.findElement(By.linkText("Sign Out")).click();
+		hp.getSignOutLink().click();
 
 //		Close browser
 		Thread.sleep(3000);
