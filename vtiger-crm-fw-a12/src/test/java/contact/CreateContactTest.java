@@ -15,21 +15,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
+import generic_utility.FileUtility;
 import generic_utility.WebDriverUtility;
+import object_repository.LoginPage;
 
 public class CreateContactTest {
-	public static void main(String[] args) throws InterruptedException, IOException {
+	@Test
+	public void createContTest() throws InterruptedException, IOException {
+//	public static void main(String[] args) throws InterruptedException, IOException {
+		FileUtility fUtil = new FileUtility();
+
 //		Get the data from properties file
-		FileInputStream fis = new FileInputStream("./src/test/resources/CommonData.properties");
-
-		Properties pObj = new Properties();
-		pObj.load(fis);
-
-		String BROWSER = pObj.getProperty("bro");
-		String URL = pObj.getProperty("url");
-		String USERNAME = pObj.getProperty("un");
-		String PASSWORD = pObj.getProperty("pwd");
+		String BROWSER = fUtil.getDataFromPropertiesFile("bro");
+		String URL = fUtil.getDataFromPropertiesFile("url");
 
 //		Get the data from excel file
 		FileInputStream fisExcel = new FileInputStream("./src/test/resources/testScriptData.xlsx");
@@ -48,13 +48,8 @@ public class CreateContactTest {
 //		Login
 		driver.get(URL);
 
-		WebElement username = driver.findElement(By.name("user_name"));
-		username.sendKeys(USERNAME);
-		WebElement password = driver.findElement(By.name("user_password"));
-		password.sendKeys(PASSWORD);
-
-		driver.findElement(By.id("submitButton")).click();
-		Thread.sleep(3000);
+		LoginPage lp = new LoginPage(driver);
+		lp.login();
 
 //		Create contact
 		driver.findElement(By.linkText("Contacts")).click();

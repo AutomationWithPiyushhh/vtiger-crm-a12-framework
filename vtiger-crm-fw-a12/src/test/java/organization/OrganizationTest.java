@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import generic_utility.FileUtility;
 import generic_utility.WebDriverUtility;
@@ -17,9 +18,10 @@ import object_repository.LoginPage;
 import object_repository.OrgPage;
 import object_repository.VerifyOrgPage;
 
-public class CreateOrganizationTest {
+public class OrganizationTest {
 
-	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException {
+	@Test
+	public void createOrgTest() throws EncryptedDocumentException, IOException, InterruptedException {
 		FileUtility fUtil = new FileUtility();
 
 //		Get the data from properties file
@@ -56,9 +58,9 @@ public class CreateOrganizationTest {
 		hp.getOrgLink().click();
 
 		Thread.sleep(2000);
-		
+
 		OrgPage op = new OrgPage(driver);
-				
+
 		op.getOrgPlusIcon().click();
 
 //		Filling data to the form

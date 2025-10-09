@@ -15,11 +15,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import generic_utility.WebDriverUtility;
 
-public class CreateContactTest {
-	public static void main(String[] args) throws InterruptedException, IOException {
+public class CalendarTest {
+
+	@Test
+	public void createCalendarTest() throws IOException, InterruptedException {
 //		Get the data from properties file
 		FileInputStream fis = new FileInputStream("./src/test/resources/CommonData.properties");
 
