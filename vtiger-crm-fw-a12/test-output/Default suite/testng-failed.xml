@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_extra.Demo3">
+      <class name="dp_extra.ArrayCheck">
         <methods>
-          <include name="modify"/>
-          <include name="delete"/>
-          <include name="create"/>
+          <include name="singleDimension"/>
         </methods>
-      </class> <!-- testng_extra.Demo3 -->
+      </class> <!-- dp_extra.ArrayCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
