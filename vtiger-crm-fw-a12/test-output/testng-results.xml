@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-10T15:27:28 IST" name="Default suite" finished-at="2025-10-10T15:27:28 IST" duration-ms="45">
+  <suite started-at="2025-10-11T13:15:23 IST" name="Suite" finished-at="2025-10-11T13:15:31 IST" duration-ms="8062">
     <groups>
     </groups>
-    <test started-at="2025-10-10T15:27:28 IST" name="Default test" finished-at="2025-10-10T15:27:28 IST" duration-ms="45">
-      <class name="dp_extra.ArrayCheck">
-        <test-method signature="singleDimension()[pri:0, instance:dp_extra.ArrayCheck@3754a4bf]" started-at="2025-10-10T15:27:28 IST" name="singleDimension" finished-at="2025-10-10T15:27:28 IST" duration-ms="8" status="PASS">
+    <test started-at="2025-10-11T13:15:23 IST" name="TestThread2" finished-at="2025-10-11T13:15:31 IST" duration-ms="8022">
+      <class name="types_of_execution.Demo2">
+        <test-method signature="case2()[pri:0, instance:types_of_execution.Demo2@2df3b89c]" started-at="2025-10-11T13:15:23 IST" name="case2" finished-at="2025-10-11T13:15:31 IST" duration-ms="7965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- singleDimension -->
-      </class> <!-- dp_extra.ArrayCheck -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_execution.Demo2 -->
+    </test> <!-- TestThread2 -->
+    <test started-at="2025-10-11T13:15:23 IST" name="TestThread1" finished-at="2025-10-11T13:15:31 IST" duration-ms="8062">
+      <class name="types_of_execution.Demo1">
+        <test-method signature="case1()[pri:0, instance:types_of_execution.Demo1@6c6cb480]" started-at="2025-10-11T13:15:23 IST" name="case1" finished-at="2025-10-11T13:15:31 IST" duration-ms="8010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+      </class> <!-- types_of_execution.Demo1 -->
+    </test> <!-- TestThread1 -->
+    <test started-at="2025-10-11T13:15:23 IST" name="TestThread3" finished-at="2025-10-11T13:15:31 IST" duration-ms="8045">
+      <class name="types_of_execution.Demo3">
+        <test-method signature="case3()[pri:0, instance:types_of_execution.Demo3@7c9d8e2]" started-at="2025-10-11T13:15:23 IST" name="case3" finished-at="2025-10-11T13:15:31 IST" duration-ms="7993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case3 -->
+      </class> <!-- types_of_execution.Demo3 -->
+    </test> <!-- TestThread3 -->
+  </suite> <!-- Suite -->
 </testng-results>

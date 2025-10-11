@@ -1,0 +1,25 @@
+
+
+<suite parallel="tests" name="Suite">
+	<test parallel="tests" name="TestThread1">
+		<classes>
+			<class name="types_of_execution.Demo1" >
+				<methods>
+					<include name="case1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test parallel="tests" name="TestThread2">
+		<classes>
+			<class name="types_of_execution.Demo2" />
+		</classes>
+	</test>
+
+	<test parallel="tests" name="TestThread3">
+		<classes>
+			<class name="types_of_execution.Demo3" />
+		</classes>
+	</test>
+</suite>

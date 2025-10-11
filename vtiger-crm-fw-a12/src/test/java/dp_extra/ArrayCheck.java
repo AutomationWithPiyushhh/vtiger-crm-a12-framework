@@ -1,31 +1,38 @@
 package dp_extra;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class ArrayCheck {
 
+	@Test(dataProvider = "getData")
+	public void loginToSauceDemo(String username, String password) {
+//		String username = "Dinga";
+//		String password = "Dingi@143";
+		System.out.println(username);
+		System.out.println(password);
+	}
+
 	@DataProvider
-	public void getData() {
-		Object [][] arr = new Object[5][2];
+	public Object[][] getData() {
+		Object[][] cred = new Object[5][2];
 //							  row => number of executions
 //							  col => number of parameters
+		cred[0][0] = "mayank";
+		cred[0][1] = "Mayank@123";
 
-		arr[0][0] = "mayank";
-		arr[0][1] = "gautam";
-		
-		arr[1][0] = "kunal";
-		arr[1][1] = "badmosh";
-		
-		arr[2][0] = "manish";
-		arr[2][1] = "sinha";
-		
-		arr[3][0] = "sonali";
-		arr[3][1] = "bisht";
+		cred[1][0] = "kunal";
+		cred[1][1] = "badmosh";
 
-		arr[4][0] = "vishakha";
-		arr[4][1] = "verma";
-		
-		
-		
+		cred[2][0] = "manish";
+		cred[2][1] = "Manish@2588";
+
+		cred[3][0] = "sonali";
+		cred[3][1] = "Sonali@123";
+
+		cred[4][0] = "vishakha";
+		cred[4][1] = "Vishu@123";
+
+		return cred;
 	}
 }
