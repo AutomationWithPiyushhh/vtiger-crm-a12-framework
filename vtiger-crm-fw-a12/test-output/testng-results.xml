@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-11T13:15:23 IST" name="Suite" finished-at="2025-10-11T13:15:31 IST" duration-ms="8062">
+  <suite started-at="2025-10-13T15:04:12 IST" name="suite" finished-at="2025-10-13T15:04:23 IST" duration-ms="10683">
     <groups>
     </groups>
-    <test started-at="2025-10-11T13:15:23 IST" name="TestThread2" finished-at="2025-10-11T13:15:31 IST" duration-ms="8022">
-      <class name="types_of_execution.Demo2">
-        <test-method signature="case2()[pri:0, instance:types_of_execution.Demo2@2df3b89c]" started-at="2025-10-11T13:15:23 IST" name="case2" finished-at="2025-10-11T13:15:31 IST" duration-ms="7965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_execution.Demo2 -->
-    </test> <!-- TestThread2 -->
-    <test started-at="2025-10-11T13:15:23 IST" name="TestThread1" finished-at="2025-10-11T13:15:31 IST" duration-ms="8062">
-      <class name="types_of_execution.Demo1">
-        <test-method signature="case1()[pri:0, instance:types_of_execution.Demo1@6c6cb480]" started-at="2025-10-11T13:15:23 IST" name="case1" finished-at="2025-10-11T13:15:31 IST" duration-ms="8010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- case1 -->
-      </class> <!-- types_of_execution.Demo1 -->
-    </test> <!-- TestThread1 -->
-    <test started-at="2025-10-11T13:15:23 IST" name="TestThread3" finished-at="2025-10-11T13:15:31 IST" duration-ms="8045">
+    <test started-at="2025-10-13T15:04:12 IST" name="testRunner1" finished-at="2025-10-13T15:04:20 IST" duration-ms="7641">
       <class name="types_of_execution.Demo3">
-        <test-method signature="case3()[pri:0, instance:types_of_execution.Demo3@7c9d8e2]" started-at="2025-10-11T13:15:23 IST" name="case3" finished-at="2025-10-11T13:15:31 IST" duration-ms="7993" status="PASS">
+        <test-method signature="case3(java.lang.String)[pri:0, instance:types_of_execution.Demo3@6d8792db]" started-at="2025-10-13T15:04:13 IST" name="case3" finished-at="2025-10-13T15:04:20 IST" duration-ms="7545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case3 -->
       </class> <!-- types_of_execution.Demo3 -->
-    </test> <!-- TestThread3 -->
-  </suite> <!-- Suite -->
+    </test> <!-- testRunner1 -->
+    <test started-at="2025-10-13T15:04:12 IST" name="testRunner2" finished-at="2025-10-13T15:04:20 IST" duration-ms="7641">
+      <class name="types_of_execution.Demo4">
+        <test-method signature="case4(java.lang.String)[pri:0, instance:types_of_execution.Demo4@200a26bc]" started-at="2025-10-13T15:04:13 IST" name="case4" finished-at="2025-10-13T15:04:20 IST" duration-ms="7545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case4 -->
+      </class> <!-- types_of_execution.Demo4 -->
+    </test> <!-- testRunner2 -->
+    <test started-at="2025-10-13T15:04:12 IST" name="testRunner3" finished-at="2025-10-13T15:04:23 IST" duration-ms="10683">
+      <class name="types_of_execution.Demo5">
+        <test-method signature="case5(java.lang.String)[pri:0, instance:types_of_execution.Demo5@1494b84d]" started-at="2025-10-13T15:04:13 IST" name="case5" finished-at="2025-10-13T15:04:23 IST" duration-ms="10586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case5 -->
+      </class> <!-- types_of_execution.Demo5 -->
+    </test> <!-- testRunner3 -->
+  </suite> <!-- suite -->
 </testng-results>
