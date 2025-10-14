@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+
+
+<suite name="Suite">
+	<groups>
+		<run>
+			<exclude name="reg"></exclude>
+		</run>
+	</groups>
+
+	<test name="Test">
+		<classes>
+			<class name="types_of_execution.Demo6" />
+			<class name="types_of_execution.Demo7" />
+		</classes>
+	</test> 
+</suite>
+
+

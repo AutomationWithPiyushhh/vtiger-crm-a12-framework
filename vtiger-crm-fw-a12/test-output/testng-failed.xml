@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [suite]">
-  <test thread-count="5" name="test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="TestThread3(failed)">
     <classes>
       <class name="types_of_execution.Demo3">
         <methods>
@@ -9,5 +9,5 @@
         </methods>
       </class> <!-- types_of_execution.Demo3 -->
     </classes>
-  </test> <!-- test(failed) -->
-</suite> <!-- Failed suite [suite] -->
+  </test> <!-- TestThread3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

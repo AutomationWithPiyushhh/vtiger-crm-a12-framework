@@ -1,54 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T15:04:12 IST" name="suite" finished-at="2025-10-13T15:04:23 IST" duration-ms="10683">
+  <suite started-at="2025-10-14T15:21:37 IST" name="Default suite" finished-at="2025-10-14T15:21:37 IST" duration-ms="96">
     <groups>
     </groups>
-    <test started-at="2025-10-13T15:04:12 IST" name="testRunner1" finished-at="2025-10-13T15:04:20 IST" duration-ms="7641">
-      <class name="types_of_execution.Demo3">
-        <test-method signature="case3(java.lang.String)[pri:0, instance:types_of_execution.Demo3@6d8792db]" started-at="2025-10-13T15:04:13 IST" name="case3" finished-at="2025-10-13T15:04:20 IST" duration-ms="7545" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-10-14T15:21:37 IST" name="Default test" finished-at="2025-10-14T15:21:37 IST" duration-ms="96">
+      <class name="config_ann_extra.OrgTest">
+        <test-method is-config="true" signature="openBro()[pri:0, instance:config_ann_extra.OrgTest@4e08711f]" started-at="2025-10-14T15:21:37 IST" name="openBro" finished-at="2025-10-14T15:21:37 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case3 -->
-      </class> <!-- types_of_execution.Demo3 -->
-    </test> <!-- testRunner1 -->
-    <test started-at="2025-10-13T15:04:12 IST" name="testRunner2" finished-at="2025-10-13T15:04:20 IST" duration-ms="7641">
-      <class name="types_of_execution.Demo4">
-        <test-method signature="case4(java.lang.String)[pri:0, instance:types_of_execution.Demo4@200a26bc]" started-at="2025-10-13T15:04:13 IST" name="case4" finished-at="2025-10-13T15:04:20 IST" duration-ms="7545" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- openBro -->
+        <test-method is-config="true" signature="login()[pri:0, instance:config_ann_extra.OrgTest@4e08711f]" started-at="2025-10-14T15:21:37 IST" name="login" finished-at="2025-10-14T15:21:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case4 -->
-      </class> <!-- types_of_execution.Demo4 -->
-    </test> <!-- testRunner2 -->
-    <test started-at="2025-10-13T15:04:12 IST" name="testRunner3" finished-at="2025-10-13T15:04:23 IST" duration-ms="10683">
-      <class name="types_of_execution.Demo5">
-        <test-method signature="case5(java.lang.String)[pri:0, instance:types_of_execution.Demo5@1494b84d]" started-at="2025-10-13T15:04:13 IST" name="case5" finished-at="2025-10-13T15:04:23 IST" duration-ms="10586" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgTest()[pri:0, instance:config_ann_extra.OrgTest@4e08711f]" started-at="2025-10-14T15:21:37 IST" name="createOrgTest" finished-at="2025-10-14T15:21:37 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case5 -->
-      </class> <!-- types_of_execution.Demo5 -->
-    </test> <!-- testRunner3 -->
-  </suite> <!-- suite -->
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:config_ann_extra.OrgTest@4e08711f]" started-at="2025-10-14T15:21:37 IST" name="logout" finished-at="2025-10-14T15:21:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBro()[pri:0, instance:config_ann_extra.OrgTest@4e08711f]" started-at="2025-10-14T15:21:37 IST" name="closeBro" finished-at="2025-10-14T15:21:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBro -->
+      </class> <!-- config_ann_extra.OrgTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

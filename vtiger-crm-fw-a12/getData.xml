@@ -1,27 +1,23 @@
-
-
-
-
 <suite parallel="tests" name="suite">
 	<test parallel="tests" name="testRunner1">
+		<parameter name="bro" value="edge" />
 		<classes>
-			<parameter name="bro" value="edge" />
-			<class name="types_of_execution.Demo3"/>
+			<class name="types_of_execution.Demo3" />
 		</classes>
 	</test>
 
 
 	<test parallel="tests" name="testRunner2">
+		<parameter name="bro" value="chrome" />
 		<classes>
-			<parameter name="bro" value="chrome" />
-			<class name="types_of_execution.Demo4"/>
+			<class name="types_of_execution.Demo4" />
 		</classes>
 	</test>
 
 	<test parallel="tests" name="testRunner3">
+		<parameter name="bro" value="firefox" />
 		<classes>
-			<parameter name="bro" value="firefox" />
-			<class name="types_of_execution.Demo5"/>
+			<class name="types_of_execution.Demo5" />
 		</classes>
 	</test>
 </suite>
