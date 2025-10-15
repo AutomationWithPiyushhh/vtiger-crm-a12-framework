@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="TestThread3(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="types_of_execution.Demo3">
+      <class name="config_ann_extra.OppTest">
         <methods>
-          <include name="case3"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="createOppTest"/>
+          <include name="closeBro"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- types_of_execution.Demo3 -->
+      </class> <!-- config_ann_extra.OppTest -->
+      <class name="config_ann_extra.OrgTest">
+        <methods>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="closeBro"/>
+          <include name="createOrgTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- config_ann_extra.OrgTest -->
+      <class name="config_ann_extra.ContactTest">
+        <methods>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="closeBro"/>
+          <include name="createContactTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- config_ann_extra.ContactTest -->
     </classes>
-  </test> <!-- TestThread3(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

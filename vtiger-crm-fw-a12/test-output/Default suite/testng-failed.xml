@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dp_extra.ArrayCheck">
+      <class name="contact.CreateContactTestAfterBaseClass">
         <methods>
-          <include name="singleDimension"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="closeBro"/>
+          <include name="createContTest"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- dp_extra.ArrayCheck -->
+      </class> <!-- contact.CreateContactTestAfterBaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

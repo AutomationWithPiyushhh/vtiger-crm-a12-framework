@@ -61,7 +61,7 @@ public class LoginPage {
 		String PASSWORD = fUtil.getDataFromPropertiesFile("pwd");
 
 		un.sendKeys(USERNAME);
-		pwd.sendKeys(PASSWORD);
+		pwd.sendKeys("admin");
 		loginBtn.click();
 	}
 }

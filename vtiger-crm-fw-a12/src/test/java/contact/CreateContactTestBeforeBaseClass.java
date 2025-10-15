@@ -21,7 +21,7 @@ import generic_utility.FileUtility;
 import generic_utility.WebDriverUtility;
 import object_repository.LoginPage;
 
-public class CreateContactTest {
+public class CreateContactTestBeforeBaseClass {
 	@Test
 	public void createContTest() throws InterruptedException, IOException {
 //	public static void main(String[] args) throws InterruptedException, IOException {
