@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="contact.CreateContactTestAfterBaseClass">
+      <class name="working_with_assertion.SoftAssertDemo">
         <methods>
-          <include name="logout"/>
-          <include name="openBro"/>
-          <include name="closeBro"/>
-          <include name="createContTest"/>
-          <include name="login"/>
+          <include name="case1"/>
         </methods>
-      </class> <!-- contact.CreateContactTestAfterBaseClass -->
+      </class> <!-- working_with_assertion.SoftAssertDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
