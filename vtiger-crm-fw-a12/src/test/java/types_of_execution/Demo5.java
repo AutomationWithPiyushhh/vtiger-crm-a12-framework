@@ -18,9 +18,7 @@ public class Demo5 {
 	@Test
 	public void case5(String Browser) throws InterruptedException, IOException {
 		WebDriver driver = null;
-
 //		String Browser = new FileUtility().getDataFromPropertiesFile("bro");
-
 		if (Browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equals("edge")) {

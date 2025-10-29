@@ -17,9 +17,9 @@ public class GetDataFromExcelFile {
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		
-		Sheet sh = wb.getSheet("A12");
+		Sheet sh = wb.getSheet("org");
 		
-		Row row = sh.getRow(9);
+		Row row = sh.getRow(4);
 		
 		Cell cell = row.getCell(1);
 		
