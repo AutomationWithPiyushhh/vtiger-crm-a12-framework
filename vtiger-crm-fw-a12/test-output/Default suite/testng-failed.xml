@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="types_of_execution.Demo2">
+      <class name="advance_reports.SauceDemo">
         <methods>
-          <include name="case22"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="login1"/>
+          <include name="closeBro"/>
+          <include name="repBackup"/>
+          <include name="login"/>
+          <include name="repConfig"/>
         </methods>
-      </class> <!-- types_of_execution.Demo2 -->
+      </class> <!-- advance_reports.SauceDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-30T14:58:57 IST" name="Default suite" finished-at="2025-10-30T14:58:59 IST" duration-ms="2274">
+  <suite started-at="2025-10-30T15:36:26 IST" name="Default suite" finished-at="2025-10-30T15:36:34 IST" duration-ms="8615">
     <groups>
     </groups>
-    <test started-at="2025-10-30T14:58:57 IST" name="Default test" finished-at="2025-10-30T14:58:59 IST" duration-ms="2274">
+    <test started-at="2025-10-30T15:36:26 IST" name="Default test" finished-at="2025-10-30T15:36:34 IST" duration-ms="8615">
       <class name="advance_reports.SauceDemo">
-        <test-method is-config="true" signature="repConfig()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="repConfig" finished-at="2025-10-30T14:58:57 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="repConfig()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:26 IST" name="repConfig" finished-at="2025-10-30T15:36:26 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- repConfig -->
-        <test-method signature="login1()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="login1" finished-at="2025-10-30T14:58:57 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="openBro()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:26 IST" name="openBro" finished-at="2025-10-30T15:36:27 IST" duration-ms="1201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login1 -->
-        <test-method signature="login2()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="login2" finished-at="2025-10-30T14:58:57 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- openBro -->
+        <test-method is-config="true" signature="login()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:27 IST" name="login" finished-at="2025-10-30T15:36:28 IST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login2 -->
-        <test-method signature="login3()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="login3" finished-at="2025-10-30T14:58:57 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login3 -->
-        <test-method signature="login4()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="login4" finished-at="2025-10-30T14:58:57 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login4 -->
-        <test-method signature="takeSS()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:57 IST" name="takeSS" finished-at="2025-10-30T14:58:59 IST" duration-ms="2202" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="takeSS()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:28 IST" name="takeSS" finished-at="2025-10-30T15:36:30 IST" duration-ms="2273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeSS -->
-        <test-method is-config="true" signature="repBackup()[pri:0, instance:advance_reports.SauceDemo@24269709]" started-at="2025-10-30T14:58:59 IST" name="repBackup" finished-at="2025-10-30T14:58:59 IST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:30 IST" name="logout" finished-at="2025-10-30T15:36:34 IST" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBro()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:34 IST" name="closeBro" finished-at="2025-10-30T15:36:34 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBro -->
+        <test-method is-config="true" signature="repBackup()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:34 IST" name="repBackup" finished-at="2025-10-30T15:36:35 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- repBackup -->
