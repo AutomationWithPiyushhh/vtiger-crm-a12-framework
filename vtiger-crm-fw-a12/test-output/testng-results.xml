@@ -1,41 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-30T15:36:26 IST" name="Default suite" finished-at="2025-10-30T15:36:34 IST" duration-ms="8615">
+  <suite started-at="2025-10-31T15:31:36 IST" name="Suite" finished-at="2025-10-31T15:31:36 IST" duration-ms="77">
     <groups>
     </groups>
-    <test started-at="2025-10-30T15:36:26 IST" name="Default test" finished-at="2025-10-30T15:36:34 IST" duration-ms="8615">
-      <class name="advance_reports.SauceDemo">
-        <test-method is-config="true" signature="repConfig()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:26 IST" name="repConfig" finished-at="2025-10-30T15:36:26 IST" duration-ms="223" status="PASS">
+    <test started-at="2025-10-31T15:31:36 IST" name="Test" finished-at="2025-10-31T15:31:36 IST" duration-ms="77">
+      <class name="listeners_extra.JustToProve1">
+        <test-method signature="case1()[pri:0, instance:listeners_extra.JustToProve1@36ebc363]" started-at="2025-10-31T15:31:36 IST" name="case1" finished-at="2025-10-31T15:31:36 IST" duration-ms="17" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at listeners_extra.JustToProve1.case1(JustToProve1.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- repConfig -->
-        <test-method is-config="true" signature="openBro()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:26 IST" name="openBro" finished-at="2025-10-30T15:36:27 IST" duration-ms="1201" status="PASS">
+        </test-method> <!-- case1 -->
+      </class> <!-- listeners_extra.JustToProve1 -->
+      <class name="listeners_extra.JustToProve2">
+        <test-method signature="case2()[pri:0, instance:listeners_extra.JustToProve2@6a6cb05c]" started-at="2025-10-31T15:31:36 IST" name="case2" finished-at="2025-10-31T15:31:36 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBro -->
-        <test-method is-config="true" signature="login()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:27 IST" name="login" finished-at="2025-10-30T15:36:28 IST" duration-ms="1060" status="PASS">
+        </test-method> <!-- case2 -->
+      </class> <!-- listeners_extra.JustToProve2 -->
+      <class name="listeners_extra.JustToProve3">
+        <test-method signature="case3()[pri:0, instance:listeners_extra.JustToProve3@22ff4249]" started-at="2025-10-31T15:31:36 IST" name="case3" finished-at="2025-10-31T15:31:36 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at listeners_extra.JustToProve3.case3(JustToProve3.java:11)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="takeSS()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:28 IST" name="takeSS" finished-at="2025-10-30T15:36:30 IST" duration-ms="2273" status="PASS">
+        </test-method> <!-- case3 -->
+        <test-method signature="case31()[pri:0, instance:listeners_extra.JustToProve3@22ff4249]" started-at="2025-10-31T15:31:36 IST" name="case31" finished-at="2025-10-31T15:31:36 IST" depends-on-methods="listeners_extra.JustToProve3.case3" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method listeners_extra.JustToProve3.case31() on instance listeners_extra.JustToProve3@22ff4249 depends on not successfully finished methods 
+[listeners_extra.JustToProve3.case3() on instance listeners_extra.JustToProve3@22ff4249]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method listeners_extra.JustToProve3.case31() on instance listeners_extra.JustToProve3@22ff4249 depends on not successfully finished methods 
+[listeners_extra.JustToProve3.case3() on instance listeners_extra.JustToProve3@22ff4249]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeSS -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:30 IST" name="logout" finished-at="2025-10-30T15:36:34 IST" duration-ms="3879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBro()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:34 IST" name="closeBro" finished-at="2025-10-30T15:36:34 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBro -->
-        <test-method is-config="true" signature="repBackup()[pri:0, instance:advance_reports.SauceDemo@6ad82709]" started-at="2025-10-30T15:36:34 IST" name="repBackup" finished-at="2025-10-30T15:36:35 IST" duration-ms="526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repBackup -->
-      </class> <!-- advance_reports.SauceDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- case31 -->
+      </class> <!-- listeners_extra.JustToProve3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

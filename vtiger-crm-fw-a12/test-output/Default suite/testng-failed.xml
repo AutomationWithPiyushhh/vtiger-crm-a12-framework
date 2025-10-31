@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advance_reports.SauceDemo">
+      <class name="listeners_extra.JustToProve1">
         <methods>
-          <include name="logout"/>
-          <include name="openBro"/>
-          <include name="login1"/>
-          <include name="closeBro"/>
-          <include name="repBackup"/>
-          <include name="login"/>
-          <include name="repConfig"/>
+          <include name="genRep"/>
+          <include name="genRep3"/>
         </methods>
-      </class> <!-- advance_reports.SauceDemo -->
+      </class> <!-- listeners_extra.JustToProve1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
